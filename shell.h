@@ -14,10 +14,10 @@
 
 extern char **environ;
 
-char *custom_getline();
-void display_prompt();
+char *custom_getline(void);
+void display_prompt(void);
 int parse_input(char *input, char *commands[]);
-void print_environment();
+void print_environment(void);
 int custom_setenv(const char *name, const char *value, int overwrite);
 int custom_unsetenv(const char *name);
 int custom_cd(const char *dir);
